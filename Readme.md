@@ -14,7 +14,7 @@ We mainly chose to use Python with pandas, and Biopython modules.
 
 ## 1) Prepare your environment 
 
-The directories are set up as below. You will need to download and store the folder "Databases" in your Home.
+The directories are set up as below. You will need to download and store the folder "Databases".
 
 ```
 ./Home
@@ -40,11 +40,10 @@ The directories are set up as below. You will need to download and store the fol
 
 ## 2) Run command lines
 
-### Build the local database
-First, download the required folder (Databases) and store it into a folder named "320GB"
-
 ### Data preprocessing scripts
 These scripts launch the preprocessing of LncRbase data and Allen Brain Atlas data. Therefore, you should download the **lncRbase_pre_processing** folder, **Coding_Transcriptome** folder and **Ensembl_GRCh38_biomart_export** folder from the **Databases** folder of this **G4_nervous_trancriptome** repository.
+
+*Note: It is important to pay attention that the script is executed in the same directory *
 
 ```bash
 python LncRbase_Pre_processing_biotypes.py 
