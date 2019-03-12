@@ -14,15 +14,21 @@ We mainly chose to use Python with pandas, and Biopython modules.
 
 ## 1) Prepare your environment 
 
-The directories are set up as below:
+The directories are set up as below. You will need to download and store the folder "Databases" in your Home.
 
 ```
-Databases
-├── Coding_Transcriptome
-│ 
-├── Ensembl_GRCh38_biomart_export
-│  
-└── lncRbase_pre_processing
+./Home
+└── Databases
+   │ 
+   │── Coding_Transcriptome
+   │   │── allen_brain_atlas_microrray_experiment_dataset
+   │   │── fasta_seq_collection
+   │
+   ├── Ensembl_GRCh38_biomart_export
+   │  
+   └── lncRbase_pre_processing
+       │── lncRNA_hsa_biotypes
+       │── fasta_seq_collection
 ```
 
 |Folder                               |Where to find it             |Content             |
@@ -38,7 +44,7 @@ Databases
 First, download the required folder (Databases) and store it into a folder named "320GB"
 
 ### Data preprocessing scripts
-These scripts launch the preprocessing of LncRbase data and Allen Brain Atlas data. Therefore, you should at least download the **lncRbase_pre_processing** folder and **Ensembl_GRCh38_biomart_export** folder from the **Databases** folder of this **G4_nervous_trancriptome** repository.
+These scripts launch the preprocessing of LncRbase data and Allen Brain Atlas data. Therefore, you should download the **lncRbase_pre_processing** folder, **Coding_Transcriptome** folder and **Ensembl_GRCh38_biomart_export** folder from the **Databases** folder of this **G4_nervous_trancriptome** repository.
 
 ```bash
 python LncRbase_Pre_processing_biotypes.py 
@@ -52,8 +58,10 @@ python coding_transcriptome_preprocessing.py
 This script allows to create fasta file corresponding to the previous brain transcritpome datasets generated. 
 
 ```bash
-python script_to_collect_fasta_files.py
+python /Home/Databases/lncRbase_pre_processing/lncRNA_hsa_biotypes/script_to_collect_fasta_files.py
 ```
+
+*Note: the python files are also available in Jupyter Notebook format .ipynb for a better vizualisation of the data created step by step*
 
 # Useful links 
 Datasets can be downloaded from following platform :
