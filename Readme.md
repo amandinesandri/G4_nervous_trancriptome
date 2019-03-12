@@ -14,6 +14,16 @@ We mainly chose to use Python with pandas, and Biopython modules.
 
 ## 1) Prepare your environment 
 
+The directories are set up as below:
+
+```
+Databases
+├── Coding_Transcriptome
+│ 
+├── Ensembl_GRCh38_biomart_export
+│  
+└── lncRbase_pre_processing
+```
 
 |Folder                               |Where to find it             |Content             |
 |--------------------                 |-------------------        |:-----------------: |
@@ -38,7 +48,7 @@ python LncRbase_Pre_processing_biotypes.py
 python coding_transcriptome_preprocessing.py
 ```
 
-# Fasta outputs
+### Fasta outputs
 This script allows to create fasta file corresponding to the previous brain transcritpome datasets generated. 
 
 ```bash
@@ -47,6 +57,7 @@ python script_to_collect_fasta_files.py
 
 # Useful links 
 Datasets can be downloaded from following platform :
+
 [Ensembl website](www.ensembl.org)
 
 [LncRbase platform](http://bicresources.jcbose.ac.in/zhumur/lncrbase/)
