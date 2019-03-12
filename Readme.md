@@ -8,7 +8,7 @@ We mainly chose to use Python with pandas, and Biopython modules.
 
 # Flowchart : Overview of the pipeline 
 
-![Flowchart](https://docs.google.com/drawings/d/1QtJI3bWGgn3PLK5nTrLXih2F6LsaX6BcbD77oNbhQek/export/png)
+![Flowchart](https://docs.google.com/drawings/d/14Cs5iPMS-Z0vcLpsSVie-r3-KFr1PyowFp3akx_Seuk/export/png)
 
 # Start the Data Pre-processing
 
