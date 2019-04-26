@@ -25,19 +25,28 @@ The directories are set up as below. You will need to download and store the fol
    │   │── fasta_seq_collection
    │
    ├── Ensembl_GRCh38_biomart_export
+       │── Ensembl_whole_human_transcriptome.fasta
+       │── Ensembl_whole_human_genome.fasta
    │  
    └── lncRbase_pre_processing
        │── lncRNA_hsa_biotypes
        │── fasta_seq_collection
+ └── Scripts
+   │ 
+   │── Coding_Transcriptome
+   │   │── allen_brain_atlas_microrray_experiment_dataset
+   │   │── fasta_seq_collection
+   │
+   ├── Ensembl_GRCh38_biomart_export
 ```
 
 |Folder                               |Where to find it             |Content             |
 |--------------------                 |-------------------        |:-----------------: |
-|**Databases**                           |Clone the repository available on github <br/> https://github.com/amandinesandri/G4_nervous_trancriptome/                 |All datasets and processing scripts |
+|**Databases**                           |Clone the repository available on github <br/> https://github.com/amandinesandri/G4_nervous_trancriptome/                 |All datasets used to predict G4 |
 |   **Coding_Transcriptome**             |Inside Databases folder   |Contains all Allen Brain Atlas RNA-seq datasets and dedicated processing scripts |
 |   **Ensembl_GRCh38_biomart_export**    |Inside Databases folder   |Contains the whole genome and transcriptome features (list of IDs + FASTA files) |
 |   **lncRbase_pre_processing**          |Inside Databases folder   |Contains lncRNA expression in different tissues and dedicated processing scripts |
-
+|**Scripts**                           |Clone the repository available on github <br/> https://github.com/amandinesandri/G4_nervous_trancriptome/                 |All scripts used to preprocess data and collect their fasta |
 ## 2) Run command lines
 
 ### Data preprocessing scripts
